@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tentang Saya</title>
+</head>
+<body>
+    <nav id="header" class="w-full top-0 left-0">
+        <div class="container mx-auto lg:w-[900px]">
+            <div class="flex items-center justify-center lg:justify-between lg:py-10 py-5">
+                <div class="hidden lg:block">
+                    <h4 class="text-4xl font-bold text-primary">Riki<span class="font-medium">Dev</span></h4>
+                </div>
+                <div>
+                    <ul class="flex">
+                        <li><a href="/dist" class="font-bold lg:font-semibold text-lg mx-5 hover:text-gray-300 text-primary">Home</a></li>
+                        <li><a href="/dist/blog.html" class="font-bold lg:font-semibold text-lg mx-5 hover:text-gray-300 text-primary">Blog</a></li>
+                        <li><a href="/dist/about.html" class="font-bold lg:font-semibold text-lg mx-5 hover:text-gray-300 text-primary navbarActive">About</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container mx-auto lg:w-[900px]">
+        <div class="w-full mt-16 mb-32">
+            <h4 class="text-primary text-2xl font-bold">Tentang Saya</h4>
+            <div class="w-full self-center my-16">
+                <img src="img/inuyasha.jpg" alt="" class="rounded-xl shadow-xl  mx-auto w-[300px] h-[280px] lg:w-[400px] lg:h-[380px]">
+            </div>
+            <div class="text-base text-primary font-normal text-justify leading-relaxed">
+                <p class="mb-3">Saya seorang mahasiswa yang sangat tertarik terhadap <span class="font-semibold">Web Development</span> dan <span class="font-semibold">Cybersecurity</span>. Saya memiliki keinginan yang besar untuk mempelajari lebih dalam tentang kedua bidang tersebut dan ingin terus berkembang di dalamnya.</p>
+                <p class="mb-3">Saya percaya bahwa web development adalah kunci utama dalam membuat website yang efektif dan menarik bagi pengguna. Saya telah mempelajari beberapa bahasa pemrograman seperti HTML, CSS, dan JavaScript untuk membuat website yang interaktif dan responsif. Selain itu, saya juga tertarik dengan pengembangan website menggunakan framework seperti ReactJS dan NodeJS.</p>
+                <p class="mb-3">Selain web development, saya juga sangat tertarik dengan dunia cybersecurity. Saya percaya bahwa keamanan digital sangat penting dalam dunia yang semakin terhubung secara online. Saya sedang belajar tentang teknologi keamanan, enkripsi data, dan teknik hacking etis untuk memastikan bahwa website yang saya bangun memiliki lapisan keamanan yang kuat.</p>
+                <p class="mb-3">Saya berharap bahwa melalui keinginan saya yang besar untuk belajar dan berkembang dalam bidang web development dan cybersecurity, saya dapat menjadi seorang profesional yang kompeten dan dapat memberikan kontribusi yang signifikan bagi industri teknologi. Terima kasih telah mengunjungi halaman web saya!</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="w-full h-[100px] lg:h-[150px] bg-primary"></div>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/6225746462.js" crossorigin="anonymous"></script>
+    <script>
+        window.onscroll = function() {
+            const header = document.querySelector('#header');
+            const fixedNav = header.offsetTop + header.offsetHeight;
+
+            if (window.pageYOffset > fixedNav) {
+                header.classList.add('navbarFixed');
+            }
+            else {
+                header.classList.remove('navbarFixed');
+            }
+        }
+    </script>
+</body>
+</html>
